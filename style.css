@@ -1,0 +1,18 @@
+div{
+    border: 3px solid rgb(68, 255, 0);
+    background: rgb(1, 255, 251)
+}
+#about {
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+}
+#selfportrait{
+    display: flex;
+}
+#navigation{
+    background: rgb(255, 2, 230)
+}
+a{
+    margin: 1%;
+}
