@@ -2,6 +2,7 @@
     <head>
         <title>A.S.T.R.O</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     </head>
     <body>
         <div id="navigation">
@@ -48,7 +49,7 @@
                     }
                 </script>
             </div>
-            <iframe width="420" height="315"
+            <iframe width="1450" height="315"
             src="https://www.youtube.com/embed/gPor9nX-jng"></iframe>
             </iframe>
         </div>
@@ -58,5 +59,39 @@
             ctx.font = "40px Impact";
             ctx.fillText("SKIBIDI OHIO RIZZ UP THE MARIO!",10,50);
             </script>
+        <div>
+            <button onclick="myFunction()">ENTER NAME HERE TO PROTECT URSELF YA BOI</button>
+            <p id="name"></p>
+            <script>
+            function myFunction() {
+                let text;
+                let person = prompt("Please enter your name:", "ENTER NAME HEREEE");
+                if (person == null || person == "") {
+                    text = "User cancelled the prompt.";
+                } else {
+                    text = "Hello " + person + "! ARE U READY TO GET PROTECTED WITH SIZZE SHEILD YA CLICK PROTECT MEEE BUTTON TO PROTECT URSELF YA NO CAP NO SCAM";
+                }
+                document.getElementById("demo").innerHTML = text;
+                }
+                </script>
+        </div>
+        <div>
+            <div id="myPlot" style="width:100%;max-width:700px"></div>
+            <script>
+            const xArray = ["my Websites", "RBC bank", "Other Bank", "USA Bank", "Afganistan Bank"];
+            const yArray = [75, 49, 44, 24, 15];
+            
+            const data = [{
+                x:xArray,
+                y:yArray,
+                type:"bar",
+                orientation:"v",
+                marker: {color:"rgba(0,0,255,0.6)"}
+            }];
+            
+            const layout = {title:"My banking Website Sucess Rates NO CAP VERY TRUE"};
+            Plotly.newPlot("myPlot", data, layout);
+            </script>
+        </div>
     </body>
 </html>
