@@ -1,0 +1,49 @@
+body {
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #f30a0a;
+  }
+
+h2 {
+    font-family: 'Papyrus', serif;
+    font-size: 35px;
+    text-shadow: 10px 10px 10px #00eaff;
+}
+
+p {
+    font-family: 'Comic Sans', serif;
+    font-size: 20px;
+    text-shadow: 4px 4px 4px #ff00d9;
+}
+  .product {
+    border: 1px solid #c3ff00;
+    border-radius: 90px;
+    padding: 10px;
+    margin: 10px;
+    width: 400px;
+    display: inline-block;
+  }
+  
+  .product img {
+    float: left;
+    width: 150px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  .product .description {
+    overflow: hidden;
+  }
+  
+  .product h2 {
+    margin-top: 0;
+  }
+  
+  .product p {
+    margin-bottom: 5px;
+  }
+
+  .body {
+    background-image: url(communityIcon_12lr0tjcbks71.png)
+  }
+  
